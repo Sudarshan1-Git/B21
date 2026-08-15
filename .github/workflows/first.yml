@@ -8,4 +8,6 @@ jobs:
       steps: 
         - name: print message
           run: echo "Hello guys how are you"
-          
+
+        - name: show content of /etc/passwd
+          run : sudo cat /etc/passwd
