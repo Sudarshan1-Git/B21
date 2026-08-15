@@ -13,7 +13,7 @@ jobs:
           run : sudo cat /etc/passwd
         
         - name: show os details
-          run : sudo cat /etc/od-release
+          run : sudo cat /etc/os-release
 
         - name: show files
           run: sudo ls -l
