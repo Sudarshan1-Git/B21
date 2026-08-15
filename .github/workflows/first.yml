@@ -4,10 +4,17 @@ on: push
 
 jobs: 
     first:
-      runs-on: ubuntu-latest
+      runs-on:
       steps: 
         - name: print message
           run: echo "Hello guys how are you"
 
         - name: show content of /etc/passwd
           run : sudo cat /etc/passwd
+        
+        - name: show os details
+          run : sudo cat /etc/od-release
+
+        - name: show files
+          run: sudo ls -l
+
