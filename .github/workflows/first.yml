@@ -9,12 +9,9 @@ jobs:
         - name: print message
           run: echo "Hello guys how are you"
 
-        - name: show content of /etc/passwd
-          run : sudo cat /etc/passwd
-        
-        - name: show os details
-          run : sudo cat /etc/os-release
-
-        - name: show files
-          run: sudo ls -l
-
+    seconf-job:
+      runs-on: ubuntu-latest
+      step:
+        - name: print 2nd message for job
+          run: echo "this is 2nd stage"
+              
