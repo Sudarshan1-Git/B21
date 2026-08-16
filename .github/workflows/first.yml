@@ -6,17 +6,12 @@ jobs:
     first-job:
       runs-on: ubuntu-latest
       steps: 
-        - name: print message
-          run: | 
-              sleep 10 
-              echo "Hello guys how are you"
+        - name: create a file
+          run: echo "this is test report" > report.txt
 
-    second-job:
-      runs-on: ubuntu-22.04
-      needs: first-job 
+    second-job: 
+      runs-on: ubuntu-latest
       steps:
-        - name: print 2nd message for job
-          run: |
-              sleep 5
-              echo "this is 2nd stage"
-
+        needs: first-job
+        - name: viewing the reports from first job
+          run: cat report.txt      
