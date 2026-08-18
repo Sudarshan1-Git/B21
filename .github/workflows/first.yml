@@ -4,7 +4,7 @@ on: workflow_dispatch
 
 jobs:
   frist-job:
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: checkout to git repo
         uses: actions/checkout@v7
