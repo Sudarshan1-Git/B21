@@ -1,9 +1,0 @@
-{
-  "name": "b21-app",
-  "version": "1.0.0",
-  "description": "B21 GitHub Actions project",
-  "main": "index.js",
-  "scripts": {
-    "test": "node test.js"
-  }
-}
